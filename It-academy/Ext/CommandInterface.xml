@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<SubsystemsVisibility>
+		<Subsystem name="Subsystem.Администрирование">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Директор">false</xr:Value>
+				<xr:Value name="Role.Мастер">false</xr:Value>
+				<xr:Value name="Role.Бухгалтер">false</xr:Value>
+			</Visibility>
+		</Subsystem>
+	</SubsystemsVisibility>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.Администрирование</Subsystem>
+		<Subsystem>Subsystem.Закупки</Subsystem>
+		<Subsystem>Subsystem.Реализация</Subsystem>
+		<Subsystem>Subsystem.Ремонт</Subsystem>
+		<Subsystem>Subsystem.Бухгалтерия</Subsystem>
+		<Subsystem>Subsystem.Отчетность</Subsystem>
+		<Subsystem>Subsystem.Возврат</Subsystem>
+		<Subsystem>Subsystem.Зарплата</Subsystem>
+	</SubsystemsOrder>
+</CommandInterface>

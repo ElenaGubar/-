@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="76">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="77"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="78">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="79"/>
+			<ChildItems>
+				<LabelField name="Огранизация" id="22">
+					<DataPath>Объект.Организация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>12</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>15</MaxWidth>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ContextMenu name="ОгранизацияКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ОгранизацияРасширеннаяПодсказка" id="24"/>
+				</LabelField>
+				<LabelField name="Склад" id="19">
+					<DataPath>Объект.Склад</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ContextMenu name="СкладКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="21"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="СрокИсполнения" id="16">
+			<DataPath>Объект.СрокИсполнения</DataPath>
+			<HorizontalAlign>Right</HorizontalAlign>
+			<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>6</Width>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СрокИсполненияКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="СрокИсполненияРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<LabelField name="СуммаДокумента" id="25">
+			<DataPath>Объект.СуммаДокумента</DataPath>
+			<HorizontalAlign>Left</HorizontalAlign>
+			<EditMode>EnterOnInput</EditMode>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<ContextMenu name="СуммаДокументаКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="СуммаДокументаРасширеннаяПодсказка" id="27"/>
+		</LabelField>
+		<Pages name="Группа1" id="62">
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="63"/>
+			<ChildItems>
+				<Page name="Группа" id="64">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование услуг</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="65"/>
+					<ChildItems>
+						<Table name="Ремонт" id="31">
+							<Representation>List</Representation>
+							<Footer>true</Footer>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Ремонт</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="РемонтКонтекстноеМеню" id="32"/>
+							<AutoCommandBar name="РемонтКоманднаяПанель" id="33"/>
+							<ExtendedTooltip name="РемонтРасширеннаяПодсказка" id="34"/>
+							<SearchStringAddition name="РемонтСтрокаПоиска" id="35">
+								<AdditionSource>
+									<Item>Ремонт</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РемонтСтрокаПоискаКонтекстноеМеню" id="36"/>
+								<ExtendedTooltip name="РемонтСтрокаПоискаРасширеннаяПодсказка" id="37"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РемонтСостояниеПросмотра" id="38">
+								<AdditionSource>
+									<Item>Ремонт</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РемонтСостояниеПросмотраКонтекстноеМеню" id="39"/>
+								<ExtendedTooltip name="РемонтСостояниеПросмотраРасширеннаяПодсказка" id="40"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РемонтУправлениеПоиском" id="41">
+								<AdditionSource>
+									<Item>Ремонт</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РемонтУправлениеПоискомКонтекстноеМеню" id="42"/>
+								<ExtendedTooltip name="РемонтУправлениеПоискомРасширеннаяПодсказка" id="43"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnEditEnd">РемонтПриОкончанииРедактирования</Event>
+								<Event name="AfterDeleteRow">РемонтПослеУдаления</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="РемонтНомерСтроки" id="44">
+									<DataPath>Объект.Ремонт.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РемонтНомерСтрокиКонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="РемонтНомерСтрокиРасширеннаяПодсказка" id="46"/>
+								</LabelField>
+								<InputField name="РемонтНоменклатура" id="47">
+									<DataPath>Объект.Ремонт.Номенклатура</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РемонтНоменклатураКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="РемонтНоменклатураРасширеннаяПодсказка" id="49"/>
+									<Events>
+										<Event name="OnChange">РемонтНоменклатураПриИзменении</Event>
+									</Events>
+								</InputField>
+								<ColumnGroup name="РемонтГруппа1" id="71">
+									<ExtendedTooltip name="РемонтГруппа1РасширеннаяПодсказка" id="72"/>
+									<ChildItems>
+										<InputField name="РемонтЦена" id="56">
+											<DataPath>Объект.Ремонт.Цена</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="РемонтЦенаКонтекстноеМеню" id="57"/>
+											<ExtendedTooltip name="РемонтЦенаРасширеннаяПодсказка" id="58"/>
+											<Events>
+												<Event name="OnChange">РемонтЦенаПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="РемонтКоличество" id="53">
+									<DataPath>Объект.Ремонт.Количество</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>Объект.Ремонт.TotalКоличество</FooterDataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РемонтКоличествоКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="РемонтКоличествоРасширеннаяПодсказка" id="55"/>
+									<Events>
+										<Event name="OnChange">РемонтКоличествоПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="РемонтСумма" id="59">
+									<DataPath>Объект.Ремонт.Сумма</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>Объект.Ремонт.TotalСумма</FooterDataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РемонтСуммаКонтекстноеМеню" id="60"/>
+									<ExtendedTooltip name="РемонтСуммаРасширеннаяПодсказка" id="61"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Реквизиты" id="66">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизиты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизиты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="РеквизитыРасширеннаяПодсказка" id="67"/>
+					<ChildItems>
+						<InputField name="Контрагент" id="7">
+							<DataPath>Объект.Контрагент</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Заказчик</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КонтрагентКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="Договор" id="10">
+							<DataPath>Объект.Договор</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДоговорКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ДоговорРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="Телефон" id="28">
+							<DataPath>1/0:05b245cb-5b47-4808-b9a3-5244bfece276</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТелефонКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ТелефонРасширеннаяПодсказка" id="30"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<LabelField name="Исполнитель" id="13">
+			<DataPath>Объект.Исполнитель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<ContextMenu name="ИсполнительКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="15"/>
+		</LabelField>
+		<LabelField name="Автор" id="73">
+			<DataPath>Объект.Автор</DataPath>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<ContextMenu name="АвторКонтекстноеМеню" id="74"/>
+			<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="75"/>
+		</LabelField>
+		<InputField name="Комментарий" id="68">
+			<DataPath>Комментарий</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="69"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="70"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.РемонтОдежды</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="Комментарий" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>AccountingRegister.Основной.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>AccumulationRegister.Продажи.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>AccumulationRegister.СтоимостьТоваров.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>AccumulationRegister.ТоварыНаСкладах.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

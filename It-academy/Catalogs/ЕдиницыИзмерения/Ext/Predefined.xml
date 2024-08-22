@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.18">
+	<Item id="4a239473-cc74-4e28-b1bf-b59cdd615af4">
+		<Name>м</Name>
+		<Code>000000001</Code>
+		<Description>метры</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8b8a7eea-1361-4c1b-bea0-40540ecb0a16">
+		<Name>шт</Name>
+		<Code>000000002</Code>
+		<Description>шт</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>
